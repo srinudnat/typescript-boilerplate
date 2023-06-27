@@ -21,7 +21,8 @@
     "build:server:prod": "cross-env NODE_ENV=production webpack --config webpack/webpack.server.config.js --mode=production",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
     "lint-fix": "npm run lint -- --fix",
-    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "precommit": "npm run lint:fix && npm run format"
   },
   "lint-staged": {
     "*.(ts|tsx|js|jsx)": [

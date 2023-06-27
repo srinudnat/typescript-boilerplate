@@ -5,7 +5,8 @@ export const Loader = (): JSX.Element => {
   return (
     <React.Fragment>
       <VscLoading />
-<div>Hi this is Syed Shafi Ahamed i am from India</div>
+<div>Hi this is Syed Shafi Ahamed 
+i am from India</div>
     </React.Fragment>
   );
 };
