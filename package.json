@@ -20,9 +20,10 @@
     "build:client:prod": "cross-env NODE_ENV=production webpack --config webpack/webpack.prod.config.js --mode=production",
     "build:server:prod": "cross-env NODE_ENV=production webpack --config webpack/webpack.server.config.js --mode=production",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
-    "lint-fix": "npm run lint -- --fix",
+    "lint:fix": "eslint --ext .js,.jsx,.ts,.tsx . --fix",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
-    "precommit": "npm run lint:fix && npm run format"
+    "precommit": "npm run lint:fix && npm run format",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.(ts|tsx|js|jsx)": [
@@ -42,8 +43,12 @@
     "dateformat": "^5.0.3",
     "express": "^4.18.2",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.1.1",
+    "styled-components": "^6.0.0-rc.6",
+    "styled-system": "^5.1.5",
+    "tinycolor2": "^1.6.0",
     "uuid": "^9.0.0"
   },
   "devDependencies": {
