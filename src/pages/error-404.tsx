@@ -1,13 +1,7 @@
-import React from "react";
-import Content from "../layout/content";
-
+import React from 'react';
 
 const ErrorNotFound = () => {
-    return (
-        <>
-        404
-        </>
-    );
+  return <>404</>;
 };
 
 export default ErrorNotFound;

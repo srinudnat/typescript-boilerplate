@@ -4,8 +4,8 @@ import { StyledButton } from './style';
 interface Props {
   children: React.ReactNode;
   onClick: () => void;
-  variant?: string, // default, primary, info, success, warning, danger, dark
-  size?: string, // sm, md, lg
+  variant?: string; // default, primary, info, success, warning, danger, dark
+  size?: string; // sm, md, lg
   disabled?: boolean;
 }
 

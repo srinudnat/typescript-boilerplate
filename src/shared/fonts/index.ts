@@ -1,2 +1,2 @@
-import { GoogleFontSans } from "./google-sans";
+import { GoogleFontSans } from './google-sans';
 export { GoogleFontSans };

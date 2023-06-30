@@ -1,1 +1,1 @@
-export type TTheme = "classic" | "light" | "cool" | "dark" | "fairplay";
+export type TTheme = 'classic' | 'light' | 'cool' | 'dark' | 'fairplay';

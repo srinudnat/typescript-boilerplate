@@ -45,6 +45,7 @@ module.exports = {
       { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
     ],
   },
+  ignorePatterns: ['types/*'],
   overrides: [
     {
       files: ['*.{ts,tsx}'],

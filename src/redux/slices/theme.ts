@@ -1,28 +1,28 @@
 /* eslint-disable no-param-reassign */
 /* eslint-disable @typescript-eslint/no-unused-expressions */
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { TTheme } from "../../shared/types";
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { TTheme } from '../../shared/types';
 
 export interface UIState {
-    theme: TTheme;
+  theme: TTheme;
 }
 
 const initialState: UIState = {
-    theme: "fairplay",
+  theme: 'fairplay',
 };
 
 const themeSlice = createSlice({
-    name: "theme",
-    initialState,
-    reducers: {
-        toggleTheme(state, action: PayloadAction<{ theme: TTheme }>) {
-            const {
-                payload: { theme },
-            } = action;
+  name: 'theme',
+  initialState,
+  reducers: {
+    toggleTheme(state, action: PayloadAction<{ theme: TTheme }>) {
+      const {
+        payload: { theme },
+      } = action;
 
-            state.theme = theme;
-        },
+      state.theme = theme;
     },
+  },
 });
 
 export const { toggleTheme } = themeSlice.actions;

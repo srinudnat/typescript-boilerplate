@@ -2,14 +2,13 @@ const webpack = require('webpack');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
-const paths = require('./paths'); 
+const paths = require('./paths');
 const filteredEnvVars = Object.keys(process.env)
-    .filter(key => key.startsWith('REACT_APP_'))
-    .reduce((env, key) => {
-      env[key] = process.env[key];
-      return env;
-    }, {});
-
+  .filter(key => key.startsWith('REACT_APP_'))
+  .reduce((env, key) => {
+    env[key] = process.env[key];
+    return env;
+  }, {});
 
 module.exports = {
   entry: [`${paths.src}/index.tsx`],
@@ -38,7 +37,7 @@ module.exports = {
       filename: 'index.html',
     }),
     new webpack.DefinePlugin({
-      'process.env': JSON.stringify(filteredEnvVars)
+      'process.env': JSON.stringify(filteredEnvVars),
     }),
     new webpack.ProgressPlugin(),
   ],

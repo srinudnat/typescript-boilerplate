@@ -1,9 +1,5 @@
-import React from "react";
+import React from 'react';
 const Content = () => {
-    return (
-        <>
-        HEADER
-        </>
-    );
-}
+  return <>HEADER</>;
+};
 export default Content;

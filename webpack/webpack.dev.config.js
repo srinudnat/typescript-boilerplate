@@ -27,7 +27,7 @@ module.exports = merge(common, {
         test: /\.(woff2|woff|eot|ttf|svg)$/,
         loader: 'file-loader',
         options: {
-            name: 'fonts/[name].[ext]',
+          name: 'fonts/[name].[ext]',
         },
       },
     ],
